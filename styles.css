@@ -1,21 +1,82 @@
+/* General styling */
 body {
-background-color:black;
-}
-#goal{
-    padding-left: 35%;
-    padding-right: 35%;
-    color:white;
-    padding-bottom: 2%; 
-    text-align:center;
-    font-family: Tahoma, Verdana, sans-serif;
-}
-a {
-    padding-left: 23%;
-    text-decoration: none;
-    text-decoration-color: rgb(128, 239, 239);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    color: #fff;
+    background-color: #000;
 }
 
-#better{
-    color:white;
-    text-align:center;
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000; /* Black background */
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(64, 246, 246); /* Blue link color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.goal {
+    font-family: 'Roboto', sans-serif; /* Stylish secondary font */
+    font-size: 2rem;
+    color: rgb(64, 246, 246);
+    text-align: center;
+    margin: 20px;
+}
+
+.mission-statement, .team-expertise, .repository-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Adjusted font size for consistency */
+    color: #fff; /* White text color */
+    font-weight: 100; /* Very light font weight */
+    text-align: center;
+    margin: 10px auto; /* Centering the text box */
+    line-height: 1.3; /* Tighter line spacing */
+    max-width: 350px; /* Decrease width of text box */
+}
+
+#mission, #team, #repository {
+    padding: 20px;
+    text-align: center;
+}
+
+#mission {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+}
+
+#team {
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker transparent background */
+}
+
+#repository {
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker transparent background */
+}
+
+.repository-link {
+    display: inline-block;
+    color: #fff; /* White link color */
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.repository-link:hover {
+    text-decoration: underline;
 }
